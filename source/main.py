@@ -1,11 +1,14 @@
+'''
 import numpy as np
 import matplotlib as plt
 import tensorflow as tf
-import pandas as pd
 import sklearn as sk
+'''
+import pandas as pd
 
 # clean the .csv file on earthquake data found in the resources folder (pandas)
-
+datafile = pd.read_csv('./resources/Significant_Earthquakes.csv')
+print(datafile.head())
 
 # turn cleaned file into np.array to be passed into the input layer of model (numpy + pandas)
 
