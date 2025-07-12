@@ -4,4 +4,5 @@
   Ended up with a model that could accurately predict earthquake magnitude correctly within a range of ±0.5 magnitude with a 90% success rate, and could predict earthquake depth correctly within a range of ±100km with a 96% success rate. 
 
 Languages used: Python 
+
 Libraries used: numpy, matplotlib, pandas, sklearn, tensorflow, seaborn, xgboost, geopandas
