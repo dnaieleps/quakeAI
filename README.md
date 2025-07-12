@@ -1,21 +1,4 @@
-Contributors: Daniel Espiritu, Ara Chobanyan, Matthew Yom, Jian Wang, Peng Tang
+In this project, I created a machine learning regression model from XGBoosted trees using the XGB Regressor from the XGB ML library. Given an input array of 10 features, this model is able to predict with relatively good accuracy the depth and magnitude of an earthquake. The input array features consists of: date, latitude, longitude, time since last 5.0-9.0 magnitude earthquake, distance (km) from Ring of Fire faultline, and root mean squared error (rms) of the residuals of the earthquake's hypocenter location. This project uses data from the Kaggle dataset which can be found at https://www.kaggle.com/datasets/usamabuttar/significant-earthquakes, and the csv file used is also included within this repo. A geoJSON file was also used in this project in order to be able to calculate each of the earthquake's kilometric distances from the major fault lines which make up the Pacific Ring of Fire. 
 
-In this project, we created a forecasting random forest algorithm along with a long short-term memory (LSTM) model that is able to predict the probability of an earthquake happening given a location, time, and magnitude. 
-
-All dependencies are listed in the requirements.txt file, along with the versions used as of July 6, 2025. The detailed steps to get this project running on your machine is detailed below: 
-
-
-OS-SPECIFIC INSTRUCTIONS
-
-MacOS: 
-    1. create a virtual environment named .venv by first opening a terminal to the project folder, and then type the command 'python3 -m venv .venv'. With this, your virtual environment is created. After that, activate the newly created venv using the command '.venv/bin/activate'. 
-
-    2. ensure that the python interpreter that you are using is version 3.10
-    
-    2. now that the venv is made, download all of the dependencies included in the requirements.txt file by typing into the terminal 'pip install -r requirements.txt'
-
-    3. if there are problems installing those packages it may be because you already have those dependencies downloaded, and a quick fix would be to type into the terminal 'pip install --force-reinstall -v -r requirements.txt' which uninstalls and reinstalls all packages
-
-    4. enjoy!
-
-Windows: 
+Languages used: Python 
+Libraries used: numpy, matplotlib, pandas, sklearn, tensorflow, seaborn, xgboost, 
